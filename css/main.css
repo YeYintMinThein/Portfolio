@@ -1,0 +1,11 @@
+@import './base/variables.css';
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
