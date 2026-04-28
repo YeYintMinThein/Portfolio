@@ -1,14 +1,20 @@
-const text = "Hi, I'm Ye Yint";
-const typingElement = document.getElementById('typing');
+const typingElement = document.querySelector('[data-i18n="hero_title"]');
 
-let i = 0;
+let typingTimeout;
 
-function type() {
-  if (i < text.length) {
-    typingElement.textContent += text.charAt(i);
-    i++;
-    setTimeout(type, 50);
+export function startTyping(text) {
+  clearTimeout(typingTimeout);
+
+  typingElement.textContent = "";
+  let i = 0;
+
+  function type() {
+    if (i < text.length) {
+      typingElement.textContent += text.charAt(i);
+      i++;
+      typingTimeout = setTimeout(type, 50);
+    }
   }
-}
 
-type();
+  type();
+}

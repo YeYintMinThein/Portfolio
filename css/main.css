@@ -1,11 +1,111 @@
 @import './base/variables.css';
 
+@font-face {
+	font-family: 'Noto Sans';
+	src: url("../assets/fonts/Noto_Sans/NotoSans-VariableFont_wght.ttf") format('truetype');
+	font-weight: 100 900;
+	font-style: normal;
+}
+
 body {
-  background: var(--bg);
-  color: var(--text);
+	font-family: "Noto Sans", sans-serif;
+	background: var(--bg);
+	color: var(--text);
+}
+
+
+/* === NAVBAR === */
+.navbar {
+	display: flex;
+	justify-content: end;
+	padding: 1rem 2rem;
+}
+
+.navbar__nav {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.navbar__theme-toggle {
+	cursor: pointer;
+}
+
+
+/* === LANGUAGE SWITCHER === */
+.language-switcher {
+    /* position: relative; */
+    /* width: 260px; */
+}
+
+.language-switcher__button {
+	width: 7.5rem;
+    display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 14px 18px;
+	border-radius: 14px;
+	border: 1px solid rgba(255,255,255, 0.2);
+	background: rgba(255,255,255, 0.05);
+	cursor: pointer;
+	backdrop-filter: blur(10px);
+}
+
+.language-switcher__selected {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.language-switcher__arrow img {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s;
+}
+
+.language-switcher--active .language-switcher__arrow img {
+    transform: rotate(180deg);
+}
+
+.language-switcher__menu {
+    position: absolute;
+    top: 70px;
+    width: 8.5rem;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 10px;
+    display: none;
+}
+
+.language-switcher--active .language-switcher__menu {
+    display: block;
+}
+
+.language-switcher__item {
+    padding: 14px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.language-switcher__item:hover {
+    background: rgba(255,255,255,0.15);
+  }
+
+.language-switcher__item--active {
+	background: rgba(255,255,255,0.2);
+}
+
+.language-switcher__icon {
+	height: 22px;
 }
 
 .hero {
-  text-align: center;
-  margin-top: 100px;
+	text-align: center;
+	margin-top: 100px;
 }

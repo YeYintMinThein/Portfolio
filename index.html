@@ -9,14 +9,47 @@
 </head>
 
 <body>
+	<header class="navbar">
+		<nav class="navbar__nav">
+			<div class="language-switcher" id="languageSwitcher">
+				<div class="language-switcher__button" id="languageSwitcherBtn">
+					<span class="language-switcher__selected" id="languageSwitcherSelected">
+						<img class="language-switcher__icon" src="./assets/icons/flag-en.svg" alt="English Language">
+						English
+					</span>
+
+					<div class="language-switcher__arrow">
+						<img src="./assets/icons/chevron-down.svg" alt="Toggle Dropdown">
+					</div>
+				</div>
+
+				<div class="language-switcher__menu">
+					<div class="language-switcher__item language-switcher__item--active" data-lang="en">
+						<img class="language-switcher__icon" src="./assets/icons/flag-en.svg" alt="English Language">
+						English
+					</div>
+
+					<div class="language-switcher__item" data-lang="jp">
+						<img class="language-switcher__icon" src="./assets/icons/flag-jp.svg" alt="Japanese Language">
+						日本語
+					</div>
+				</div>
+			</div>
+
+			<button class="navbar__theme-toggle" id="themeToggle">
+				🌙 click here
+			</button>
+		</nav>
+	</header>
+
 	<section id="hero" class="hero">
-    	<h2 id="typing"></h2>
-    	<p>Fullstack Developer | Future AI Engineer</p>
+    	<h2 data-i18n="hero_title"></h2>
+    	<p data-i18n="hero_subtitle"></p>
 	</section>
 
 	<section id="about" class="about">
-		<h2>About Me</h2>
-		<p>I am a Fullstack developer with Frontend and Backend skills.</p>
+		<h2 data-i18n="about_title"></h2>
+		<p data-i18n="about_desc"></p>
 	</section>
 
 	<script type="module" src="./js/main.js"></script>
