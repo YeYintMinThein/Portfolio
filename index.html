@@ -15,7 +15,7 @@
 	<header class="navbar">
 		<nav class="navbar__nav">
 			<div class="language-switcher" id="languageSwitcher">
-				<div class="language-switcher__button" id="languageSwitcherBtn">
+				<div class="language-switcher__button" id="languageSwitcherBtn" tabindex="0">
 					<span class="language-switcher__selected" id="languageSwitcherSelected">
 						<img class="language-switcher__icon" src="./assets/icons/flag-en.svg" alt="English Language">
 						English
@@ -59,20 +59,55 @@
 					<ellipse style="stroke: rgb(0, 0, 0); fill: rgb(253, 255, 0);" cx="255.183" cy="256.758" rx="103.29" ry="103.29"/>
 				</svg>
 				
-				<!-- <img class="navbar__theme-icon" id="themeToggleIcon" src="./assets/icons/sun1.svg" alt="Light Mode" /> -->
 				<div class="navbar__theme-circle" id="themeToggleCircle"></div>
 			</div>
 		</nav>
 	</header>
 
-	<section id="hero" class="hero">
-    	<h2 data-i18n="hero_title"></h2>
-    	<p data-i18n="hero_subtitle"></p>
+	<section class="hero">
+		<div class="hero__container">
+			<div class="hero__content">
+				<p class="hero__subtitle" data-i18n="hero_subtitle"></p>
+
+				<h1 class="hero__title">
+					<span data-i18n="hero_title"></span>
+					<span class="hero__title-suffix" data-i18n="hero_title_suffix"></span>
+				</h1>
+
+				<h2 class="hero__subtitles">
+					<span id="heroSubtitles" data-i18n="hero_subtitles"></span>
+				</h2>
+
+				<p class="hero__description" data-i18n="hero_description"></p>
+
+				<div class="hero__buttons">
+					<a href="#" class="hero__button hero__button--primary">
+						Explore Projects
+					</a>
+
+					<a href="#" class="hero__button hero__button--secondary">
+						Contact Me
+					</a>
+				</div>
+			</div>
+
+			<div class="hero__image-wrapper">
+				<div class="hero__image-card">
+					<img src="./assets/images/profile.jpg" alt="Profile" class="hero__image">
+				</div>
+			</div>
+		</div>
+
+		<div class="hero__scroll">
+			<span class="hero__scroll-text">Scroll Down</span>
+			<div class="hero__scroll-line"></div>
+		</div>
 	</section>
 
 	<section id="about" class="about">
 		<h2 data-i18n="about_title"></h2>
 		<p data-i18n="about_desc"></p>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit molestiae iure adipisci saepe animi debitis accusantium aut veniam! Vero asperiores dicta unde facilis deserunt nobis similique aliquid, ab temporibus provident ducimus rem sed, natus necessitatibus aut porro distinctio eius rerum. Dignissimos temporibus provident hic itaque voluptates autem repellendus minima asperiores, illo vitae ab ut minus dolorem maiores vero eius aut qui ea, reiciendis, recusandae doloremque ratione totam inventore? Praesentium possimus dolore accusamus blanditiis, doloremque enim id, deleniti nisi suscipit assumenda voluptatem. Corporis maiores commodi laudantium architecto quod facilis autem, sunt necessitatibus voluptate voluptatum unde eveniet officia aperiam, enim iste!</p>
 	</section>
 
 	<script type="module" src="./js/main.js"></script>

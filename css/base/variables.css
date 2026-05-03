@@ -1,17 +1,22 @@
 :root {
   --bg: #e1e1e1;
   --selection-bg: auto;
-  --text: #333333;
-
   --glass-bg: rgba(229, 227, 227, 0.35);
   --glass-pale-bg: rgba(229, 227, 227, 0.2);
+  --bg-gradient-right: linear-gradient(to right, #507aed, #ac5ed3);
+  --bg-gradient-bottom: linear-gradient(to bottom, #507aed, #ac5ed3);
+
+  --text: #333333;
+  --description: #484a62;
+  --subtitle: #6366f1;
+  --lower-subtitle: #3b82f6;
 
   --bright-border: 1px solid rgba(100, 100, 100, 0.9);
   --glass-border: 1px solid rgba(189, 182, 182, 0.8);
   --glass-pale-border: 1px solid rgba(189, 182, 182, 0.5);
 
   --glass-hover: rgba(0, 0, 0, 0.05);
-  --glass-active: rgba(0, 0, 0, 0.08);
+  --glass-active: rgba(0, 0, 0, 0.13);
 
   --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 
@@ -22,17 +27,22 @@
 .dark {
   --bg: #1e1e2f;
   --selection-bg: #9333ea;
-  --text: #e0e0e0;
-
   --glass-bg: rgba(255, 255, 255, 0.1);
   --glass-pale-bg: rgba(255, 255, 255, 0.08);
+  --bg-gradient-right: linear-gradient(to right, #60a5fa, #c084fc);
+  --bg-gradient-bottom: linear-gradient(to bottom, #60a5fa, #c084fc);
+
+  --text: #e0e0e0;
+  --description: #b6c9df;
+  --subtitle: #91afe3;
+  --lower-subtitle: #38bdf8;
 
   --bright-border: 1px solid rgba(100, 100, 100, 0.5);
   --glass-border: 1px solid rgba(255, 255, 255, 0.3);
   --glass-pale-border: 1px solid rgba(255, 255, 255, 0.2);
 
   --glass-hover: rgba(255, 255, 255, 0.15);
-  --glass-active: rgba(255, 255, 255, 0.2);
+  --glass-active: rgba(255, 255, 255, 0.3);
 
   --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 

@@ -1,13 +1,32 @@
 {
   "en": {
-    "hero_title": "Hi, I'm Ye Yint",
-    "hero_subtitle": "Fullstack Developer | Future AI Engineer",
+    "hero_title": "Ye Yint",
+	"hero_title_suffix": "",
+    "hero_subtitle": "Hello, I'm",
+    "hero_description": "Java Developer passionate about AI, Web Development, and creating modern interactive experiences.",
+    "hero_subtitles": [
+      "Fullstack Developer",
+      "AI Enthusiast",
+      "Frontend Learner",
+      "Backend Programmer",
+      "Creative Coder"
+    ],
     "about_title": "About Me",
     "about_desc": "I am a Fullstack developer with Frontend and Backend skills."
   },
+
   "jp": {
-    "hero_title": "こんにちは、私はイェー・イントです",
-    "hero_subtitle": "フルスタック開発者 | 将来のAIエンジニア",
+    "hero_title": "イェー・イント",
+    "hero_title_suffix": "です。",
+    "hero_subtitle": "こんにちは、私は",
+    "hero_description": "AI、Web開発、そして現代的なインタラクティブ体験の創造に情熱を注ぐJava開発者。",
+    "hero_subtitles": [
+      "フルスタック開発者",
+      "AI愛好家",
+      "フロントエンド学習者",
+      "バックエンドプログラマー",
+      "クリエイティブコーダー"
+    ],
     "about_title": "自己紹介",
     "about_desc": "私はフロントエンドとバックエンドの両方のスキルを持つフルスタック開発者です。"
   }
